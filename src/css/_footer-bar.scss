@@ -1,0 +1,37 @@
+.footer-bar{
+    clear: both;
+    height: 62px;
+    width: 100vw;
+    background-color:hsl(0,80%,50%);
+    .wraper{
+        @extend %wraper-c;
+        .social-links{
+            height: 40px;
+            width: 70px;
+            position: absolute;
+            float: left;
+            
+            a{
+                i{
+                    font-size: 22px;
+                    color: white;
+                    padding-left: 5px;
+                    line-height: 62px;
+                }
+            }
+            .fa-facebook:hover{
+                        color:dodgerblue;
+            }
+            .fa-instagram:hover{    
+                        color:darkred;
+            }
+        }
+        .copyright{
+            float: right;
+            line-height: 62px;
+            color: white;
+        }
+        
+    }
+}
+

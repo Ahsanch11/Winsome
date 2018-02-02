@@ -1,0 +1,114 @@
+//classes
+
+%h2-c{     // H2 class
+    font-size: 55px;
+    color:hsl(0,40%,50%);
+    margin:0px;
+    margin-bottom: 15px;
+    padding: 0px;
+    font-weight: lighter;
+    text-align: center;
+}
+%btn2-c{    //btn2 class
+    height: 50px;
+    width: 130px;
+    background-color:hsl(0,60%,50%);
+    color: white;
+    border:1px white solid;
+    cursor: pointer;
+    font-size: 14px;
+    text-transform: uppercase;
+    &:hover{
+       background-color:whitesmoke;
+        color:firebrick;
+        border: 1px firebrick solid;
+    }
+}
+
+//scss start
+
+#sec-2{
+    height: 1100px;
+    
+    
+    .wraper{
+        @extend %wraper-c;
+        
+        
+        .des{
+            width: 600px;
+            margin: 80px auto;
+            
+            
+            h2{
+                @extend %h2-c;
+            }
+            
+            
+            span{
+                color: dimgrey;
+                text-align: center;
+                display: block;
+                font-size: 20px;
+                font-style:italic;
+            }
+            
+            
+        }
+        
+        .img-1{
+           float: left;
+        }
+        .img-2{
+            float: right;
+        }
+        img{
+                height: 300px;
+                width: 580px;
+                &:hover{
+                opacity: 0.2;
+                }
+        }
+        
+        
+        
+        .img-des{
+            width: 580px;
+            background-color: rgb(243, 243, 243);
+            padding: 35px;
+            pre{
+                a{
+                    color: #134a7d;
+                    text-decoration: none; 
+                }
+            }
+            h2{
+                @extend %h2-c;
+                a{
+                    color: hsl(0,40%,50%);
+                    text-decoration: none;
+                }
+                
+                
+            }
+            p{
+                color: dimgrey;
+                font-family: sans-serif;
+                line-height: 30PX;
+            }
+            .btn2{
+                @extend %btn2-c;
+            }
+            
+        }
+        .des-1{
+                float: left;
+        }
+        .des-2{
+                float: right;
+        }
+        
+        
+        
+    }
+}

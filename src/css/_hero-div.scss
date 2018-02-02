@@ -1,0 +1,97 @@
+%wraper-c{
+    margin: 0 auto;
+    padding: 0 10px;
+    width: 1200px;
+    
+}
+li{
+    list-style: none;
+}
+
+#hero_img{
+    
+    clear: both;
+    height: 600px;
+    width:100vw;
+    background: #e8eced url('../img/hero.jpg') no-repeat center center;
+    .wraper{
+        @extend %wraper-c;
+        #hero-des{
+            position: relative;
+            top: 150px;
+            h2{
+                color: white;
+                font-size: 60px;
+                font-family:monospace;
+                text-transform: uppercase;
+                text-align: center;
+                padding: 0px;
+                margin: 0px;
+                opacity: .7;
+                font-weight: bold;
+                span{
+                    color:skyblue;
+                }
+            }
+                
+        }
+        .hero-links{
+            width: 820px;
+            position:relative;
+            top: 300px;
+            float: left;
+            margin: 0 165px;
+            li{
+                float: left;
+                padding-left: 20px;
+                color: white;
+                text-transform: uppercase;
+                opacity: 0.5;
+                transition: all 1s ease-in-out 0s;
+                div{
+                    height: 120px;
+                    width: 180px;
+                    font-size: 18px;
+                    padding-left: 5px;
+                    background-color:darkviolet;
+                    .icn{
+                        width:30%;
+                        line-height:120px;
+                        padding-left: 15px;
+                        font-size: 30px;
+                        float: left;
+                        padding-left: 5px;
+                    
+                    }
+                    a{
+                        float: left;
+                        line-height: 120px;
+                        color: white;
+                        text-decoration: none;
+                    }
+                }
+                &+li{
+                    div{
+                        background-color:dodgerblue;
+                    }
+                }
+                &+li+li{
+                    div{
+                        background-color:forestgreen;
+                    }
+                }
+                &+li+li+li{
+                    div{
+                        background-color:deeppink;
+                    }
+                }
+                &:hover{
+                    opacity: 0.8;
+                }
+            }
+            
+            
+        }
+    }
+    
+}

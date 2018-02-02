@@ -1,0 +1,130 @@
+%img-sec-1-c{
+    height: 642px;
+    width: 412px;
+
+    float: left;
+}
+%img-sec-2-c{
+    height: 642px;
+    width: 316px;
+    float: left;
+
+}
+%img-cat-1-c{
+    height: 407px;
+    width: 406px;
+    margin: 0 2px 0 2px;
+    
+}
+%img-cat-2-c{
+    height: 227px;
+    width: 406px;
+    margin: 5px 2px 2px 2px;
+    
+}
+%sub-cat-1-c{
+    height: 228px;
+    width: 312px;
+    
+}
+%sub-cat-2-c{
+    height: 174px;
+    width: 312px;
+    margin: 5px 0;
+    
+}
+
+
+#life-at-scbs{
+    
+    height:1000px;
+    background: white url("../img/bg.jpg") no-repeat center center;
+    
+    .wraper{
+        @extend %wraper-c;
+        
+        
+        .des{
+            width: 600px;
+            margin: 50px auto;
+            padding-top: 50px;
+            
+            h2{
+                font-size: 50px;
+                color:hsl(0,40%,50%);
+                margin:0px;
+                padding:0; 
+                font-weight: lighter;
+                text-align: center;
+            } 
+        }
+        
+        .scbs-img{
+            height: 642px;
+            width: 1175px;
+            padding: 0 15px;
+            margin: 0 auto;
+            
+            
+            .img-sec-1{
+                @extend %img-sec-1-c;
+                
+                .img-cat-1{
+                    @extend %img-cat-1-c;
+                    
+                    img{
+                        
+                        height: 407px;
+                        width: 406px;
+                        &:hover{
+                        opacity: 0.2;
+                        }
+                    }
+                }
+                .img-cat-2{
+                    @extend %img-cat-2-c;
+                    
+                    img{
+                        height: 227px;
+                        width: 406px;
+                        &:hover{
+                        opacity: 0.2;
+                        }
+                    
+                    } 
+                }
+            }
+            .img-sec-2{
+                div{
+                        @extend %img-sec-2-c;
+                    
+                        .sub-cat-1{
+                            @extend %sub-cat-1-c;
+                            
+                            img{
+                                height: 228px;
+                                width: 312px;
+                                &:hover{
+                                opacity: 0.2;
+                                }
+                            }
+                        }
+                        .sub-cat-2{
+                            @extend %sub-cat-2-c;
+                            
+                            img{
+                                height: 174px;
+                                width: 312px;
+                                &:hover{
+                                    opacity: 0.2;
+                                }
+                            }
+                        } 
+                }
+            }
+              
+        }
+        
+    }
+        
+}

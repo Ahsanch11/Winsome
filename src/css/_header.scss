@@ -1,0 +1,97 @@
+%wraper-c {
+    margin: 0 auto;
+    padding: 0 10px;
+    width: 1200px;
+}
+header{
+    
+   .wraper{
+            @extend %wraper-c;
+            #logo{
+                width: 140px;
+                float: left;
+                img{
+                    width: 140px;
+                    float: left;
+                    margin-left: 30px;
+                }
+                
+            }
+            .upper-links{
+                    float:right;
+                    height: 50px;
+                    width:300px; 
+                    ul{
+                       float: right;
+                        li{
+                            list-style: none;
+                            float: left;
+                            margin: 0 10px;
+                            padding-top: 7px;
+                            font-family: sans-serif;
+                            cursor: pointer;
+                            a{
+                                text-decoration: none;
+                                color:hsl(0,60%,50%);
+                                
+                            }
+                            i{
+                                color: hsl(0,60%,50%);
+                            }
+                        }
+                    }
+            }
+            .nav-bar{
+                width: 750px;
+                float: right;
+                margin-top: 45px;
+                a{
+                    padding:5px;
+                    float: right;
+                    text-transform: uppercase;
+//                    font-weight: bold;
+                    font-family:cursive;
+                    color:dimgrey;
+                    text-decoration:none;
+                    font-size: 18px;
+                    &:hover{
+                        color:dimgrey;
+                        border-left: 3px red solid;
+                    }
+                
+                    
+                    
+                }
+                .hide-bar{
+                    background-color: bisque;
+                }
+                .tabs{
+                    padding-left: 5px;
+                    float: right;
+                    transition-duration: 3s;
+                    .hide-bar{
+                        width: 120px;
+                        display: none;
+                        transition-property: display;
+                        transition-duration: 3s;
+                        a{
+                            margin-top: 7px;
+                            &:hover{
+                                color:dimgrey;
+                                border-right: 3px red solid;
+                            }
+                        }
+                    }
+                    &:hover .hide-bar{
+                        display: block;
+                        
+                        
+                    }
+                    a{
+                        text-align:justify;
+                    }
+                }
+            }
+        }
+    }   
+   

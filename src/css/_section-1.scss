@@ -1,0 +1,50 @@
+%overlay-c{
+    height: 450px;
+    width:100vw;
+    background-color:hsl(0,60%,50%);
+}
+%section-c{
+    width: 320px;
+    float: left;
+    margin: 50px 35px;
+    color: white;
+    line-height: 30px;
+    text-align: justify;
+}
+%btn-c{
+    height: 50px;
+    width: 130px;
+    background-color:transparent;
+    color: white;
+    border:1px white solid;
+    cursor: pointer;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+#overlay{
+    @extend %overlay-c;
+    .wraper{
+        @extend %wraper-c;
+        .section{
+            @extend %section-c;
+                li{
+                   padding-top: 10px;
+                   cursor: pointer; 
+                   a{
+                       text-decoration: none;
+                       color: white;
+                    }
+                }
+
+                .btn1{
+                    @extend %btn-c; 
+                }
+                .btn1:hover{
+                background-color: whitesmoke;
+                border: hidden;
+                color: hsl(0,60%,50%);
+                }
+        }
+    }
+}
